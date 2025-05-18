@@ -55,6 +55,15 @@
           "params": {
             "url": "Masukkan Link Video YouTube"
           }
+        },
+        {
+          "name": "YouTube MP4",
+          "desc": "Download MP4 dari video YouTube",
+          "path": "/download/ytmp4?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukkan Link Video YouTube"
+          }
         }
       ]
     },
