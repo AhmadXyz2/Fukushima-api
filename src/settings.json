@@ -77,8 +77,21 @@
   "name": "Create Payment Orkut",
   "desc": "Buat pembayaran dengan code QR dan nominal",
   "path": "/random/payment",
-  "status": "ready"
+  "status": "ready",
+  "params": {
+    "amount": {
+      "type": "number",
+      "required": true,
+      "desc": "Jumlah nominal pembayaran (contoh: 10000)"
+    },
+    "codeqr": {
+      "type": "string",
+      "required": true,
+      "desc": "Kode QR tujuan pembayaran"
+    }
+  }
         }
+        
       ]
     },
     {
