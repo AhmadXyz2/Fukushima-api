@@ -1,5 +1,3 @@
-const { Buffer } = require('buffer');
-
 module.exports = function(app) {
   function toBase64(text) {
     return Buffer.from(text).toString('base64');
