@@ -59,7 +59,7 @@
         {
           "name": "Facebook",
           "desc": "Masukkan Link Facebook",
-          "path": "/tools/tools/web-screenshot?url=",
+          "path": "/tools/web-screenshot?url=",
           "status": "Akan Datang",
           "params": {
             "url": "Harus berupa link fb"
