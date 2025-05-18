@@ -83,15 +83,15 @@
           "status": "ready"
         },
          {
-      "name": "Payment Generator",
-      "desc": "Buat pembayaran menggunakan API Orkut",
-      "path": "/random/payment?amount=&codeqr=",
-      "status": "ready",
-      "params": {
-        "amount": "Jumlah nominal pembayaran",
-        "codeqr": "Kode QR tujuan pembayaran"
-      }
-    }     
+  "name": "Payment Generator",
+  "desc": "Buat pembayaran menggunakan LineCloud",
+  "path": "/random/payment?amount=&codeqr=",
+  "status": "ready",
+  "params": {
+    "amount": "Jumlah pembayaran (contoh: 10000)",
+    "codeqr": "Kode QR pengguna"
+  }
+         }
       ]
     },
     {
