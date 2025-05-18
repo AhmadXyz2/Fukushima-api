@@ -82,25 +82,16 @@
           "path": "/random/nsfw",
           "status": "ready"
         },
-        {
-  "name": "Create Payment Orkut",
-  "desc": "Buat pembayaran dengan code QR dan nominal",
-  "path": "/random/payment",
-  "status": "ready",
-  "params": {
-    "amount": {
-      "type": "number",
-      "required": true,
-      "desc": "Jumlah nominal pembayaran (contoh: 10000)"
-    },
-    "codeqr": {
-      "type": "string",
-      "required": true,
-      "desc": "Kode QR tujuan pembayaran"
-    }
-  }
-        }
-        
+         {
+      "name": "Payment Generator",
+      "desc": "Buat pembayaran menggunakan API Orkut",
+      "path": "/random/payment?amount=&codeqr=",
+      "status": "ready",
+      "params": {
+        "amount": "Jumlah nominal pembayaran",
+        "codeqr": "Kode QR tujuan pembayaran"
+      }
+    }     
       ]
     },
     {
