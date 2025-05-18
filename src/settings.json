@@ -22,7 +22,7 @@
           "params": {
             "text": "Text for luminai to respond to"
           }
-        },          
+        },
         {
           "name": "Blackbox",
           "desc": "Api Blackbox",
@@ -45,18 +45,18 @@
       ]
     },
     {
-  "name": "Downloader",
-  "items": [
-    {
-      "name": "YouTube MP3",
-      "desc": "Download MP3 dari video YouTube",
-      "path": "/download/ytmp3?url=",
-      "status": "ready",
-      "params": {
-        "url": "Masukkan Link Video YouTube"
-      }
-    }
-  ]
+      "name": "Downloader",
+      "items": [
+        {
+          "name": "YouTube MP3",
+          "desc": "Download MP3 dari video YouTube",
+          "path": "/download/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukkan Link Video YouTube"
+          }
+        }
+      ]
     },
     {
       "name": "Random",
@@ -68,10 +68,10 @@
           "status": "ready"
         },
         {
-  "name": "NSFW Neko",
-  "desc": "Random NSFW Neko Image",
-  "path": "/random/nsfw",
-  "status": "ready"
+          "name": "NSFW Neko",
+          "desc": "Random NSFW Neko Image",
+          "path": "/random/nsfw",
+          "status": "ready"
         }
       ]
     },
@@ -97,14 +97,14 @@
           }
         },
         {
-  "name": "To Base64",
-  "desc": "Convert text to Base64",
-  "path": "/search/base64?text=",
-  "status": "ready",
-  "params": {
-    "text": "Teks yang ingin diubah ke base64"
-  }
-        }    
+          "name": "To Base64",
+          "desc": "Convert text to Base64",
+          "path": "/search/base64?text=",
+          "status": "ready",
+          "params": {
+            "text": "Teks yang ingin diubah ke base64"
+          }
+        }
       ]
     }
   ]
