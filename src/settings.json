@@ -132,6 +132,15 @@
       "params": {
         "id": "Masukkan ID akun Free Fire"
       }
+    },
+    {
+      "name": "Web Screenshot",
+      "desc": "Ambil tangkapan layar dari sebuah website",
+      "path": "/tools/web-screenshot?url=",
+      "status": "ready",
+      "params": {
+        "url": "URL website yang ingin diambil screenshot-nya (harus pakai http/https)"
+      }
     }
   ]
     },
