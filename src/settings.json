@@ -56,6 +56,15 @@
             "url": "Harus berupa link mediafire"
           }
         },
+         {
+      "name": "MediaFire",
+      "desc": "Download file dari MediaFire",
+      "path": "/download/mediafire?url=",
+      "status": "ready",
+      "params": {
+        "url": "Masukkan link MediaFire"
+      }
+         },
         {
           "name": "Facebook",
           "desc": "Masukkan Link Facebook",
