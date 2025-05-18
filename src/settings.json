@@ -90,6 +90,15 @@
   "params": {
     "text": "Teks yang ingin diubah ke base64"
   }
+        },
+        {
+  "name": "YouTube MP3 Downloader",
+  "desc": "Download audio from YouTube link",
+  "path": "/search/ytmp3?url=",
+  "status": "ready",
+  "params": {
+    "url": "YouTube video URL"
+  }
         }
       ]
     }
