@@ -20,7 +20,7 @@
     "https": "^1.0.0",
     "node-fetch": "^2.6.1",
     "yt-search": "^2.12.1",
-    "@sparticuz/chromium": "^120.0.0",
-    "puppeteer-core": "^21.3.8"
+    "@sparticuz/chromium": "^119.0.1",
+    "puppeteer-core": "^19.7.5"
   }
 }
