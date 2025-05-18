@@ -32,19 +32,7 @@
             "text": "Teks atau perintah untuk chat AI",
             "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
           }
-        },
-            {
-      "name": "AI (Artificial Intelligence)",
-      "items": [
-        {
-          "name": "LuminAI",
-          "desc": "Talk with luminai",
-          "path": "/ai/luminai?text=",
-          "status": "ready",
-          "params": {
-            "text": "Text for luminai to respond to"
-          }
-          }
+        }
       ]
     },
     {
@@ -73,5 +61,4 @@
       ]
     }               
   ]
-    }
-    
+}
