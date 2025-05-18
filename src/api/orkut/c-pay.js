@@ -38,7 +38,7 @@ module.exports = function(app) {
       const response = await createPayment(amount, codeqr);
       res.status(200).json({
         status: true,
-        creator: 'ikann',
+        creator: 'Fukushima',
         data: response.result || response
       });
     } catch (error) {
