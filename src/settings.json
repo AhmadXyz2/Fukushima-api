@@ -72,6 +72,12 @@
           "desc": "Random NSFW Neko Image",
           "path": "/random/nsfw",
           "status": "ready"
+        },
+        {
+  "name": "Create Payment Orkut",
+  "desc": "Buat pembayaran dengan code QR dan nominal",
+  "path": "/random/payment",
+  "status": "ready"
         }
       ]
     },
