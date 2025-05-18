@@ -47,15 +47,6 @@
     {
       "name": "Downloader",
       "items": [
-        {
-          "name": "MediaFire",
-          "desc": "Masukkan Link Mediafire",
-          "path": "/download/mediafire?url=",
-          "status": "Akan Datang",
-          "params": {
-            "url": "Harus berupa link mediafire"
-          }
-        },
          {
       "name": "MediaFire",
       "desc": "Download file dari MediaFire",
