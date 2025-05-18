@@ -108,17 +108,7 @@
           "desc": "Random NSFW Neko Image",
           "path": "/random/nsfw",
           "status": "ready"
-        },
-         {
-  "name": "Payment Generator",
-  "desc": "Buat pembayaran menggunakan LineCloud",
-  "path": "/random/payment?amount=&codeqr=",
-  "status": "ready",
-  "params": {
-    "amount": "Jumlah pembayaran (contoh: 10000)",
-    "codeqr": "Kode QR pengguna"
-  }
-         }
+        }
       ]
     },
     {
@@ -143,6 +133,21 @@
       }
     }
   ]
+    },
+    {
+      "name": "Order Kouta",
+      "items": [
+        {
+          "name": "Create Payment",
+          "desc": "membuat payment order kouta",
+          "path": "/orkut/create?amount=&codeqr=",
+          "status": "ready",
+          "params": {
+            "amount": "Search query", 
+            "codeqr": "rawr"
+          }
+        }
+      ]
     },
     {
       "name": "Search Tools",
