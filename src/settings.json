@@ -7,7 +7,7 @@
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "Fukushima", 
+    "creator": "Fukushima",
     "apikey": ["fuku-api"]
   },
   "categories": [
@@ -32,14 +32,14 @@
             "text": "Temukan Hal Yang Menarik"
           }
         },
-       {
+        {
           "name": "HydroMind",
           "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
           "path": "/ai/hydromind?text=&model=",
           "status": "ready",
           "params": {
             "text": "Teks atau perintah untuk chat AI",
-            "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
+            "model": "See the list of supported AI models here: https://mind.hydrooo.web.id"
           }
         }
       ]
@@ -66,8 +66,17 @@
           "params": {
             "q": "Search query"
           }
+        },
+        {
+          "name": "BratV1",
+          "desc": "Generate image from brat.caliphdev.com",
+          "path": "/api/bratv1?q=",
+          "status": "ready",
+          "params": {
+            "q": "Text query to generate image"
+          }
         }
       ]
-    }               
+    }
   ]
 }
