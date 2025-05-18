@@ -13,7 +13,7 @@
   "categories": [
     {
       "name": "AI (Artificial Intelligence)",
-      "items": [
+      "items": [   
         {
           "name": "LuminAI",
           "desc": "Talk with luminai",
@@ -47,6 +47,24 @@
     {
       "name": "Downloader",
       "items": [
+        {
+          "name": "MediaFire",
+          "desc": "Masukkan Link Mediafire",
+          "path": "/download/mediafire?url=",
+          "status": "Akan Datang",
+          "params": {
+            "url": "Harus berupa link mediafire"
+          }
+        },
+        {
+          "name": "Facebook",
+          "desc": "Masukkan Link Facebook",
+          "path": "/download/facebook?url=",
+          "status": "Akan Datang",
+          "params": {
+            "url": "Harus berupa link fb"
+          }
+        },
         {
           "name": "YouTube MP3",
           "desc": "Download MP3 dari video YouTube",
