@@ -81,6 +81,15 @@
           "params": {
             "q": "Text query to generate image"
           }
+        },
+        {
+  "name": "To Base64",
+  "desc": "Convert text to Base64",
+  "path": "/search/base64?text=",
+  "status": "ready",
+  "params": {
+    "text": "Teks yang ingin diubah ke base64"
+  }
         }
       ]
     }
