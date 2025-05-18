@@ -64,6 +64,15 @@
           "params": {
             "url": "Masukkan Link Video YouTube"
           }
+        },
+        {
+      "name": "TikTok Download",
+      "desc": "Download video dan audio dari TikTok",
+      "path": "/download/tiktok?url=",
+      "status": "ready",
+      "params": {
+        "url": "Masukkan link video TikTok"
+      }
         }
       ]
     },
