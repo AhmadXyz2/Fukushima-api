@@ -23,6 +23,16 @@
             "text": "Text for luminai to respond to"
           }
         },
+            {
+      "name": "Groq AI",
+      "desc": "Chat AI menggunakan model LLaMA 3 dari Groq",
+      "path": "/ai/openai?text=",
+      "status": "ready",
+      "params": {
+        "text": "Pertanyaan atau perintah untuk AI",
+        "prompt": "(optional) Prompt sistem kustom"
+      }
+            },
         {
           "name": "Blackbox",
           "desc": "Api Blackbox",
