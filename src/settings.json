@@ -23,6 +23,15 @@
             "text": "Text for luminai to respond to"
           }
         },
+        {
+          "name": "Blackbox",
+          "desc": "Api Blackbox",
+          "path": "/ai/blackbox?text=",
+          "status": "ready",
+          "params": {
+            "text": "Temukan Hal Yang Menarik"
+          }
+        },
        {
           "name": "HydroMind",
           "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
