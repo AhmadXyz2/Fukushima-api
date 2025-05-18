@@ -115,6 +115,16 @@
   "name": "Stalk",
   "items": [
     {
+      "name": "Mobile Legends ID Checker",
+      "desc": "Cek nickname dari ID Mobile Legends",
+      "path": "/tools/ml?id=&zone=",
+      "status": "ready",
+      "params": {
+        "id": "Masukkan ID akun Mobile Legends",
+        "zone": "Masukkan Zone ID akun Mobile Legends"
+      }
+    },
+    {
       "name": "Cek ID Free Fire",
       "desc": "Cek nickname dari ID Free Fire",
       "path": "/tools/cekid-ff?id=",
