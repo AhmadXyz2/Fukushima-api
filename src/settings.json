@@ -70,7 +70,7 @@
         {
           "name": "BratV1",
           "desc": "Generate image from brat.caliphdev.com",
-          "path": "/api/bratv1?q=",
+          "path": "/search/brat?q=",
           "status": "ready",
           "params": {
             "q": "Text query to generate image"
