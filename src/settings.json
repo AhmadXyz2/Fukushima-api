@@ -52,6 +52,12 @@
           "desc": "Blue Archive Random Images",
           "path": "/random/ba",
           "status": "ready"
+        },
+        {
+  "name": "NSFW Neko",
+  "desc": "Random NSFW Neko Image",
+  "path": "/random/nsfw",
+  "status": "ready"
         }
       ]
     },
