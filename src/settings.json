@@ -122,6 +122,20 @@
       ]
     },
     {
+  "name": "Stalk",
+  "items": [
+    {
+      "name": "Cek ID Free Fire",
+      "desc": "Cek nickname dari ID Free Fire",
+      "path": "/tools/cekid-ff?id=",
+      "status": "ready",
+      "params": {
+        "id": "Masukkan ID akun Free Fire"
+      }
+    }
+  ]
+    },
+    {
       "name": "Search Tools",
       "items": [
         {
