@@ -115,20 +115,20 @@
   "name": "Canvas",
   "items": [
     {
-  "name": "Level Up Profile",
-  "desc": "Buat gambar level-up dengan avatar, background, dan nama",
-  "path": "/canvas/profile?",
-  "status": "ready",
-  "params": {
-    "backgroundURL": "Masukkan URL gambar background (wajib http/https)",
-    "avatarURL": "Masukkan URL avatar pengguna (wajib http/https)",
-    "fromLevel": "Masukkan level sebelumnya (contoh: 0)",
-    "toLevel": "Masukkan level baru saat ini (contoh: 1)",
-    "name": "Masukkan nama pengguna untuk ditampilkan"
-  }
-    }   
+      "name": "Level Up Profile",
+      "desc": "Buat gambar level-up sekarang",
+      "path": "/canvas/profile?backgroundURL=https://i.ibb.co.com/2jMjYXK/IMG-20250103-WA0469.jpg&avatarURL=https://avatars.githubusercontent.com/u/159487561?v=4&fromLevel=0&toLevel=1&name=putu",
+      "status": "ready",
+      "params": {
+        "backgroundURL": "URL gambar latar belakang (harus http/https)",
+        "avatarURL": "URL avatar pengguna (harus http/https)",
+        "fromLevel": "Level sebelumnya (angka)",
+        "toLevel": "Level sekarang (angka)",
+        "name": "Nama pengguna yang ditampilkan"
+      }
+    }
   ]
-    },
+    },   
     {
   "name": "Stalk",
   "items": [
