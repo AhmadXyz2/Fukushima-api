@@ -252,6 +252,15 @@
       "name": "Search Tools",
       "items": [
         {
+  "name": "Pinterest",
+  "desc": "Mencari gambar dari Pinterest berdasarkan kata kunci",
+  "path": "/search/pin?query=",
+  "status": "ready",
+  "params": {
+    "query": "Masukkan kata kunci pencarian (contoh: anime)"
+  }
+},
+        {
           "name": "YouTube",
           "desc": "Video search",
           "path": "/search/youtube?q=",
