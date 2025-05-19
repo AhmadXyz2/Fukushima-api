@@ -11,9 +11,9 @@ module.exports = function(app) {
       });
     }
 
-    // Jika user ingin respons JSON, kirim link
+    // Jika ingin respons JSON, kirim link audio
     if (json === 'true') {
-      const audioUrl = `${req.protocol}://${req.get('host')}${req.path}?text=${encodeURIComponent(text)}&model=${model}`;
+      const audioUrl = `${req.protocol}://${req.get('host')}${req.path}?text=${encodeURIComponent(text)}&model=${encodeURIComponent(model)}`;
       return res.json({
         status: true,
         creator: 'Fukushima',
@@ -22,7 +22,7 @@ module.exports = function(app) {
       });
     }
 
-    // Jika tidak, langsung stream audio
+    // Jika tidak, langsung kirim audio
     try {
       const response = await axios.get('https://fastrestapis.fasturl.cloud/tts/openai', {
         params: { text, model },
