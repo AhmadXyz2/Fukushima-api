@@ -175,7 +175,22 @@
       }
     }
   ]
-    },   
+    },  
+    {
+  "name": "Maker",
+  "items": [
+    {
+      "name": "EmojiMix",
+      "desc": "Gabungkan dua emoji menjadi satu gambar",
+      "path": "/maker/emojimix?emoji1=😀&emoji2=😂",
+      "status": "ready",
+      "params": {
+        "emoji1": "Emoji pertama (gunakan karakter emoji, bukan teks)",
+        "emoji2": "Emoji kedua (gunakan karakter emoji, bukan teks)"
+      }
+    }
+  ]
+},
     {
   "name": "Stalk",
   "items": [
