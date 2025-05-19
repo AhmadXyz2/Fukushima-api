@@ -48,19 +48,18 @@
   "name": "Text To Speech",
   "items": [
     {
-      "name": "OpenAI",
-      "desc": "Ubah teks menjadi suara dengan model OpenAI (Nova, Echo, Shimmer, Alloy, Fable, Onyx)",
-      "path": "/tts/open-tts?text=Hai&model=nova",
+      "name": "OpenAI TTS",
+      "desc": "Ubah teks jadi suara, langsung klik link untuk dengar",
+      "path": "/tts/open-tts?text=Halo&model=nova",
       "status": "ready",
       "params": {
-        "text": "Teks yang ingin diubah menjadi suara",
-        "model": "Model suara (nova, echo, shimmer, alloy, fable, onyx)",
-        "json": "Isi dengan 'true' jika ingin hasil dalam format JSON (opsional)"
+        "text": "Teks yang ingin diubah jadi suara",
+        "model": "Model suara, contoh: nova, shimmer, echo"
       },
-      "example": "/tts/open-tts?text=Halo%20aku%20Fukushima&model=shimmer&json=true"
+      "example": "/tts/open-tts?text=Halo&model=nova"
     }
   ]
-    },   
+    },  
     {
       "name": "Downloader",
       "items": [
