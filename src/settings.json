@@ -116,15 +116,15 @@
   "items": [
     {
       "name": "Level Up Profile",
-      "desc": "Buat gambar level-up sekarang",
-      "path": "/canvas/profile?backgroundURL=https://i.ibb.co.com/2jMjYXK/IMG-20250103-WA0469.jpg&avatarURL=https://avatars.githubusercontent.com/u/159487561?v=4&fromLevel=0&toLevel=1&name=putu",
+      "desc": "Buat gambar level-up dari avatar dan background",
+      "path": "/canvas/profile?backgroundURL=&avatarURL=&fromLevel=&toLevel=&name=",
       "status": "ready",
       "params": {
-        "backgroundURL": "URL gambar latar belakang (harus http/https)",
-        "avatarURL": "URL avatar pengguna (harus http/https)",
-        "fromLevel": "Level sebelumnya (angka)",
-        "toLevel": "Level sekarang (angka)",
-        "name": "Nama pengguna yang ditampilkan"
+        "backgroundURL": "URL gambar latar belakang",
+        "avatarURL": "URL gambar avatar pengguna",
+        "fromLevel": "Level sebelumnya (misalnya: 0)",
+        "toLevel": "Level sekarang (misalnya: 1)",
+        "name": "Nama pengguna (untuk ditampilkan di gambar)"
       }
     }
   ]
