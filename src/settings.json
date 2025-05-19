@@ -115,7 +115,23 @@
   "name": "Canvas",
   "items": [
     {
-      "name": "Level Up Profile",
+      "name": "Profile",
+      "desc": "Buat gambar profil level dengan rank, exp, dan nama",
+      "path": "/canvas/profile2?backgroundURL=&avatarURL=&rankName=&rankId=&requireExp=&level=&name=&exp=",
+      "status": "ready",
+      "params": {
+        "backgroundURL": "URL gambar latar belakang",
+        "avatarURL": "URL gambar avatar pengguna",
+        "rankName": "Nama rank (misalnya: epik)",
+        "rankId": "ID atau badge rank (angka)",
+        "requireExp": "Jumlah exp maksimal di level ini",
+        "exp": "Jumlah exp saat ini",
+        "level": "Level pengguna",
+        "name": "Nama pengguna"
+      }
+    },
+    {
+      "name": "Level Up",
       "desc": "Buat gambar level-up dari avatar dan background",
       "path": "/canvas/profile?backgroundURL=&avatarURL=&fromLevel=&toLevel=&name=",
       "status": "ready",
