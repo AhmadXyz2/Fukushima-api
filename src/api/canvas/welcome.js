@@ -2,12 +2,20 @@ const axios = require('axios');
 
 module.exports = function(app) {
   app.get('/canvas/welcome-cv', async (req, res) => {
-    const { avatar, background, name } = req.query;
+    const {
+      avatar,
+      background,
+      title,
+      description,
+      borderColor,
+      avatarBorderColor,
+      overlayOpacity
+    } = req.query;
 
-    if (!avatar || !background || !name) {
+    if (!avatar || !background || !title || !description || !borderColor || !avatarBorderColor || !overlayOpacity) {
       return res.status(400).json({
         status: false,
-        error: 'Parameter "avatar", "background", dan "name" wajib diisi.'
+        error: 'Parameter tidak lengkap. Semua parameter wajib diisi: avatar, background, title, description, borderColor, avatarBorderColor, overlayOpacity.'
       });
     }
 
@@ -16,7 +24,11 @@ module.exports = function(app) {
         params: {
           avatar,
           background,
-          name
+          title,
+          description,
+          borderColor,
+          avatarBorderColor,
+          overlayOpacity
         },
         responseType: 'arraybuffer'
       });
@@ -27,9 +39,10 @@ module.exports = function(app) {
       });
       res.end(response.data);
     } catch (error) {
-      console.error('Gagal generate welcome canvas:', error.message);
+      console.error('Gagal mengambil welcome image:', error.message);
       res.status(500).json({
         status: false,
+        creator: 'Fukushima',
         error: 'Terjadi kesalahan saat mengambil gambar dari API.'
       });
     }
