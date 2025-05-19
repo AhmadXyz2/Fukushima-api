@@ -130,6 +130,19 @@
     {
   "name": "Canvas",
   "items": [
+      {
+      "name": "Welcome Canvas",
+      "desc": "Buat gambar welcome dengan avatar, background, dan nama",
+      "path": "/canvas/welcome-cv?avatar=URL_AVATAR&background=URL_BACKGROUND&name=NamaUser",
+      "method": "GET",
+      "status": "ready",
+      "params": {
+        "avatar": "URL gambar avatar pengguna",
+        "background": "URL gambar latar belakang",
+        "name": "Nama pengguna untuk ditampilkan"
+      },
+      "example": "/canvas/welcome-cv?avatar=https://fastmanager.fasturl.cloud/Uploads/Hikaru-PP.png&background=https://example.com/bg.jpg&name=Hikaru"
+      },
     {
       "name": "Profile",
       "desc": "Buat gambar profil level dengan rank, exp, dan nama",
