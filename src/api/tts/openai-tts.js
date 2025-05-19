@@ -1,32 +1,28 @@
-const axios = require('axios');
-
-module.exports = function(app) {
+module.exports = function (app) {
   app.get('/tts/open-tts', async (req, res) => {
     const { text, model } = req.query;
 
     if (!text || !model) {
       return res.status(400).json({
         status: false,
-        error: 'Parameter "text" dan "model" wajib diisi.'
+        message: 'Parameter "text" dan "model" wajib diisi'
       });
     }
 
     try {
-      const response = await axios.get('https://fastrestapis.fasturl.cloud/tts/openai', {
-        params: { text, model },
-        responseType: 'arraybuffer'
-      });
+      const encodedText = encodeURIComponent(text);
+      const audioURL = `https://fastrestapis.fasturl.cloud/tts/openai?text=${encodedText}&model=${model}`;
 
-      res.writeHead(200, {
-        'Content-Type': 'audio/mpeg',
-        'Content-Length': response.data.length
+      return res.json({
+        status: true,
+        audio: audioURL,
+        message: 'Klik link audio untuk mendengarkan'
       });
-      res.end(response.data);
     } catch (error) {
-      console.error('Gagal mengambil audio:', error.message);
-      res.status(500).json({
+      console.error('TTS error:', error.message);
+      return res.status(500).json({
         status: false,
-        error: 'Terjadi kesalahan saat menghubungi API TTS.'
+        message: 'Gagal membuat audio'
       });
     }
   });
