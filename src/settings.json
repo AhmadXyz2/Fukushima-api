@@ -214,6 +214,15 @@
       }
     },
     {
+  "name": "WA Channel Stalker",
+  "desc": "Cek info channel WhatsApp publik dari link",
+  "path": "/tools/wastalk?url=",
+  "status": "ready",
+  "params": {
+    "url": "URL channel WhatsApp publik (harus diawali dengan https://www.whatsapp.com/channel/)"
+  }
+},
+    {
       "name": "Web Screenshot",
       "desc": "Ambil tangkapan layar dari sebuah website",
       "path": "/tools/web-screenshot?url=",
