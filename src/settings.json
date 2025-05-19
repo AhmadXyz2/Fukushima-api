@@ -48,8 +48,8 @@
   "name": "Text To Speech",
   "items": [
     {
-      "name": "OpenAI TTS",
-      "desc": "Ubah teks jadi suara, langsung klik link untuk dengar",
+      "name": "OpenAI English",
+      "desc": "model suara (contoh: nova, shimmer, onyx, echo)",
       "path": "/tts/open-tts?text=Halo&model=nova",
       "status": "ready",
       "params": {
