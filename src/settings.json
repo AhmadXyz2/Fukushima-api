@@ -270,6 +270,15 @@
           }
         },
         {
+  "name": "TikTok Search",
+  "desc": "Video search on TikTok",
+  "path": "/search/tiktok?query=",
+  "status": "ready",
+  "params": {
+    "query": "Search query"
+  }
+},
+        {
           "name": "BratV1",
           "desc": "Generate image from brat.caliphdev.com",
           "path": "/search/brat?q=",
