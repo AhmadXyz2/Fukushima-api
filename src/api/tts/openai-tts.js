@@ -1,4 +1,4 @@
-module.exports = function (app) {
+module.exports = function(app) {
   app.get('/tts/open-tts', async (req, res) => {
     const { text, model } = req.query;
 
@@ -9,21 +9,13 @@ module.exports = function (app) {
       });
     }
 
-    try {
-      const encodedText = encodeURIComponent(text);
-      const audioURL = `https://fastrestapis.fasturl.cloud/tts/openai?text=${encodedText}&model=${model}`;
+    const audioUrl = `https://fastrestapis.fasturl.cloud/tts/openai?text=${encodeURIComponent(text)}&model=${encodeURIComponent(model)}`;
 
-      return res.json({
-        status: true,
-        audio: audioURL,
-        message: 'Klik link audio untuk mendengarkan'
-      });
-    } catch (error) {
-      console.error('TTS error:', error.message);
-      return res.status(500).json({
-        status: false,
-        message: 'Gagal membuat audio'
-      });
-    }
+    res.json({
+      status: true,
+      creator: 'Fukushima',
+      audio: audioUrl,
+      message: 'Klik link audio untuk mendengarkan'
+    });
   });
 };
