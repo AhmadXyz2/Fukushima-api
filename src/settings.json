@@ -112,6 +112,26 @@
       ]
     },
     {
+  "name": "Canvas",
+  "items": [
+    {
+      "name": "Level Up Profile",
+      "desc": "Buat gambar level-up dengan avatar, background, dan nama",
+      "path": "/canvas/profile",
+      "method": "GET",
+      "example": "/canvas/profile?backgroundURL=https://i.ibb.co.com/2jMjYXK/IMG-20250103-WA0469.jpg&avatarURL=https://avatars.githubusercontent.com/u/159487561?v=4&fromLevel=0&toLevel=1&name=putu",
+      "status": "ready",
+      "params": {
+        "backgroundURL": "URL untuk gambar latar belakang (background)",
+        "avatarURL": "URL untuk avatar pengguna",
+        "fromLevel": "Level sebelumnya (angka)",
+        "toLevel": "Level saat ini (angka)",
+        "name": "Nama pengguna (untuk ditampilkan di gambar)"
+      }
+    }
+  ]
+    },
+    {
   "name": "Stalk",
   "items": [
     {
