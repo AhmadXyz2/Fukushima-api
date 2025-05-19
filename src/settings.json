@@ -130,19 +130,23 @@
     {
   "name": "Canvas",
   "items": [
-      {
-      "name": "Welcome Canvas",
-      "desc": "Buat gambar welcome dengan avatar, background, dan nama",
-      "path": "/canvas/welcome-cv?avatar=URL_AVATAR&background=URL_BACKGROUND&name=NamaUser",
+    {
+      "name": "Welcome Card",
+      "desc": "Buat gambar kartu sambutan (welcome) dengan avatar dan latar kustom",
+      "path": "/canvas/welcome-cv",
       "method": "GET",
+      "example": "/canvas/welcome-cv?avatar=https://fastmanager.fasturl.cloud/Uploads/Hikaru-PP.png&background=https://fastmanager.fasturl.cloud/Uploads/Hikaru-BG.png&title=Welcome,%20Hikaru&description=Welcome%20to%20this%20server,%20go%20read%20the%20rules%20please!&borderColor=2a2e35&avatarBorderColor=2a2e35&overlayOpacity=0.5",
       "status": "ready",
       "params": {
-        "avatar": "URL gambar avatar pengguna",
+        "avatar": "URL gambar avatar",
         "background": "URL gambar latar belakang",
-        "name": "Nama pengguna untuk ditampilkan"
-      },
-      "example": "/canvas/welcome-cv?avatar=https://fastmanager.fasturl.cloud/Uploads/Hikaru-PP.png&background=https://example.com/bg.jpg&name=Hikaru"
-      },
+        "title": "Judul sambutan (misal: Welcome, Hikaru)",
+        "description": "Deskripsi (misal: Welcome to this server, go read the rules please!)",
+        "borderColor": "Kode warna border (contoh: 2a2e35)",
+        "avatarBorderColor": "Kode warna border avatar (contoh: 2a2e35)",
+        "overlayOpacity": "Tingkat gelap overlay latar (0.0 - 1.0)"
+      }
+    },    
     {
       "name": "Profile",
       "desc": "Buat gambar profil level dengan rank, exp, dan nama",
