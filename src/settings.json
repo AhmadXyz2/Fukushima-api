@@ -48,17 +48,18 @@
   "name": "Text to Speech",
   "items": [
     {
-      "name": "Open TTS",
-      "desc": "Ubah teks menjadi suara langsung dalam audio",
+      "name": "Open Ai TTS",
+      "desc": "Ubah teks menjadi suara dengan berbagai model suara",
       "path": "/tts/open-tts?text=&model=",
       "status": "ready",
       "params": {
-        "text": "Masukkan teks yang ingin diubah ke suara",
-        "model": "Masukkan model suara (contoh: nova, echo, shimmer, onyx)"
-      }
+        "text": "Teks yang ingin diubah menjadi suara",
+        "model": "Model suara (contoh: nova, shimmer, echo)"
+      },
+      "example": "/tts/open-tts?text=Hai%20semua&model=nova"
     }
   ]
-    },   
+    },  
     {
       "name": "Downloader",
       "items": [
