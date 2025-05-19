@@ -1,21 +1,45 @@
+const axios = require('axios');
+
 module.exports = function(app) {
   app.get('/tts/open-tts', async (req, res) => {
-    const { text, model } = req.query;
+    const { text, model, json } = req.query;
 
     if (!text || !model) {
       return res.status(400).json({
         status: false,
-        message: 'Parameter "text" dan "model" wajib diisi'
+        error: 'Parameter "text" dan "model" wajib diisi.'
       });
     }
 
-    const audioUrl = `https://fastrestapis.fasturl.cloud/tts/openai?text=${encodeURIComponent(text)}&model=${encodeURIComponent(model)}`;
+    // Jika user ingin respons JSON, kirim link
+    if (json === 'true') {
+      const audioUrl = `${req.protocol}://${req.get('host')}${req.path}?text=${encodeURIComponent(text)}&model=${model}`;
+      return res.json({
+        status: true,
+        creator: 'Fukushima',
+        audio: audioUrl,
+        message: 'Klik link audio untuk mendengarkan'
+      });
+    }
 
-    res.json({
-      status: true,
-      creator: 'Fukushima',
-      audio: audioUrl,
-      message: 'Klik link audio untuk mendengarkan'
-    });
+    // Jika tidak, langsung stream audio
+    try {
+      const response = await axios.get('https://fastrestapis.fasturl.cloud/tts/openai', {
+        params: { text, model },
+        responseType: 'arraybuffer'
+      });
+
+      res.writeHead(200, {
+        'Content-Type': 'audio/mpeg',
+        'Content-Length': response.data.length
+      });
+      res.end(response.data);
+    } catch (error) {
+      console.error('Gagal mengambil audio:', error.message);
+      res.status(500).json({
+        status: false,
+        error: 'Terjadi kesalahan saat menghubungi API TTS.'
+      });
+    }
   });
 };
