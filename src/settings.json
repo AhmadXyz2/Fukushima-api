@@ -45,6 +45,20 @@
       ]
     },
     {
+  "name": "Tools",
+  "items": [
+    {
+      "name": "Voice to Text",
+      "desc": "Konversi suara/audio ke dalam teks",
+      "path": "/tools2/audio2txt?audioUrl=",
+      "status": "ready",
+      "params": {
+        "audioUrl": "URL file audio (.mp3, .opus, dll)"
+      }
+    }
+  ]
+},
+    {
   "name": "Text To Speech",
   "items": [
     {
