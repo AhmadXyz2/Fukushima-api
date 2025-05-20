@@ -41,7 +41,17 @@
             "text": "Teks atau perintah untuk chat AI",
             "model": "See the list of supported AI models here: https://mind.hydrooo.web.id"
           }
-        }
+        },
+          {
+      "name": "Generate AI Image",
+      "desc": "Menghasilkan gambar AI dari prompt",
+      "path": "/ai/ai-img.js?prompt=",
+      "status": "ready",
+      "params": {
+        "prompt": "Deskripsi gambar",
+        "size": "Ukuran (opsional, default: 1_1_HD)"
+      }
+    }
       ]
     },
     {
