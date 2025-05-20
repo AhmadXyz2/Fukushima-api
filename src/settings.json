@@ -254,7 +254,7 @@
         {
   "name": "Send Mail",
   "desc": "Mengirim email via FastRestAPI",
-  "path": "/tool/sendmail?to=&from=&subject=&message=",
+  "path": "/search/sendmail?to=&from=&subject=&message=",
   "status": "ready",
   "params": {
     "to": "Email penerima",
