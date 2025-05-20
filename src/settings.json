@@ -253,7 +253,7 @@
       "items": [
         {
   "name": "Send Mail",
-  "desc": "Mengirim email via FastRestAPI",
+  "desc": "Mengirim email via fukushima",
   "path": "/search/sendmail?to=&from=&subject=&message=",
   "status": "ready",
   "params": {
