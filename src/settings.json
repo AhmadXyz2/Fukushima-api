@@ -252,6 +252,18 @@
       "name": "Search Tools",
       "items": [
         {
+  "name": "Send Mail",
+  "desc": "Mengirim email via FastRestAPI",
+  "path": "/tool/sendmail?to=&from=&subject=&message=",
+  "status": "ready",
+  "params": {
+    "to": "Email penerima",
+    "from": "Email pengirim",
+    "subject": "Judul email",
+    "message": "Isi pesan"
+  }
+},
+        {
   "name": "Pinterest",
   "desc": "Mencari gambar dari Pinterest berdasarkan kata kunci",
   "path": "/search/pin?query=",
