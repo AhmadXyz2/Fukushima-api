@@ -13,11 +13,11 @@
   "categories": [
     {
       "name": "AI (Artificial Intelligence)",
-      "items": [   
+      "items": [ 
         {
   "name": "AI Image 18+",
-  "desc": "Menghasilkan gambar AI bergaya realistis dewasa (18+) berdasarkan prompt",
-  "path": "/ai/aireal-img?prompt=",
+  "desc": "Menghasilkan gambar AI bergaya realistis dewasa (18+) berdasarkan prompt. Parameter style sudah otomatis diatur.",
+  "path": "/ai/aireal-img?prompt={prompt}",
   "status": "ready",
   "params": {
     "prompt": "Deskripsi gambar dewasa yang ingin dibuat (wajib)"
