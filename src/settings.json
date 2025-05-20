@@ -23,6 +23,16 @@
     "imageUrl": "URL gambar yang ingin diubah ke versi anime (wajib)"
   }
 },
+{
+  "name": "To Animation",
+  "desc": "Mengubah gambar ke versi animasi dengan style pilihan.",
+  "path": "/ai/toanimation?imageUrl=&style=",
+  "status": "ready",
+  "params": {
+    "imageUrl": "URL gambar yang akan dianimasikan (wajib)",
+    "style": "Gaya animasi seperti 3D, crayon, dan lainnya (wajib)"
+  }
+},
         {
   "name": "AI Image 18+",
   "desc": "Menghasilkan gambar AI bergaya realistis. eror reques doank didalam web... tapi silahkan salin endepoint nya dan jalankan manual",
