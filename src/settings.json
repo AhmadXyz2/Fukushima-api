@@ -45,7 +45,7 @@
           {
       "name": "Generate AI Image",
       "desc": "Menghasilkan gambar AI dari prompt",
-      "path": "/ai/ai-img.js?prompt=",
+      "path": "/ai/ai-img?prompt=",
       "status": "ready",
       "params": {
         "prompt": "Deskripsi gambar",
