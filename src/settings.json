@@ -15,6 +15,15 @@
       "name": "AI (Artificial Intelligence)",
       "items": [   
         {
+  "name": "AI Image 18+",
+  "desc": "Menghasilkan gambar AI bergaya realistis dewasa (18+) berdasarkan prompt",
+  "path": "/ai/aireal-img?prompt=",
+  "status": "ready",
+  "params": {
+    "prompt": "Deskripsi gambar dewasa yang ingin dibuat (wajib)"
+  }
+},
+        {
           "name": "LuminAI",
           "desc": "Talk with luminai",
           "path": "/ai/luminai?text=",
