@@ -205,6 +205,15 @@
       }
     },
     {
+  "name": "Cek Lokasi",
+  "desc": "Mencari data lokasi berdasarkan nama kota (populasi, negara, koordinat, dll)",
+  "path": "/tools/ceklokasi?name=",
+  "status": "ready",
+  "params": {
+    "name": "Nama kota yang ingin dicari (contoh: Jakarta)"
+  }
+},
+    {
       "name": "Cek ID Free Fire",
       "desc": "Cek nickname dari ID Free Fire",
       "path": "/tools/cekid-ff?id=",
