@@ -142,6 +142,15 @@
     {
       "name": "Downloader",
       "items": [
+        {
+  "name": "Download Capcut Video",
+  "desc": "Mengunduh video dari template Capcut berdasarkan URL yang diberikan",
+  "path": "/download/capcut?url=",
+  "status": "ready",
+  "params": {
+    "url": "URL template Capcut yang ingin didownload (wajib)"
+  }
+},
          {
       "name": "MediaFire",
       "desc": "Download file dari MediaFire",
