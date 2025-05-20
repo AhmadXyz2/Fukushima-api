@@ -24,6 +24,15 @@
   }
 },
 {
+  "name": "Text to Image (AI Ease)",
+  "desc": "Mengubah prompt teks menjadi beberapa gambar AI bergaya seni dengan model AI Ease.",
+  "path": "/ai/textoimage?prompt=",
+  "status": "ready",
+  "params": {
+    "prompt": "Deskripsi teks untuk menghasilkan gambar AI (wajib)"
+  }
+},
+{
   "name": "To Animation",
   "desc": "Mengubah gambar ke versi animasi dengan style pilihan.",
   "path": "/ai/toanimation?imageUrl=&style=",
