@@ -358,6 +358,15 @@
           "params": {
             "text": "Teks yang ingin diubah ke base64"
           }
+        },
+                {
+          "name": "Play Store",
+          "desc": "Search App In Play Store",
+          "path": "/search/playstore?q=",
+          "status": "ready",
+          "params": {
+            "text": "Cari Aplikasi Yang Ingin Anda Ketahui"
+          }
         }
       ]
     }
