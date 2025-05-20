@@ -55,6 +55,24 @@
       "params": {
         "audioUrl": "URL file audio (.mp3, .opus, dll)"
       }
+    },
+      {
+      "name": "Encode JavaScript",
+      "desc": "Mengubah kode JavaScript menjadi bentuk terenkripsi/obfuscated",
+      "path": "/tools2/encodejs?inputCode=",
+      "status": "ready",
+      "params": {
+        "inputCode": "Kode JavaScript yang ingin diobfusikasi"
+      }
+    },
+     {
+      "name": "Translate Inggris ke Indonesia",
+      "desc": "Menerjemahkan teks berbahasa Inggris ke Bahasa Indonesia",
+      "path": "/tools2/translateingris?text=",
+      "status": "ready",
+      "params": {
+        "text": "Teks dalam bahasa Inggris yang ingin diterjemahkan"
+      }
     }
   ]
 },
