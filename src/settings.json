@@ -16,7 +16,7 @@
       "items": [ 
         {
   "name": "AI Image 18+",
-  "desc": "Menghasilkan gambar AI bergaya realistis dewasa (18+) berdasarkan prompt. Parameter style sudah otomatis diatur.",
+  "desc": "Menghasilkan gambar AI bergaya realistis. eror reques doank didalam web... tapi silahkan salin endepoint nya dan jalankan manual",
   "path": "/ai/aireal-img?prompt=",
   "status": "ready",
   "params": {
