@@ -15,6 +15,15 @@
       "name": "AI (Artificial Intelligence)",
       "items": [ 
         {
+  "name": "Anime AI Convert",
+  "desc": "Mengubah foto wajah menjadi gaya anime otomatis menggunakan AI. Hanya butuh URL gambar.",
+  "path": "/ai/anime-ai?imageUrl=",
+  "status": "ready",
+  "params": {
+    "imageUrl": "URL gambar yang ingin diubah ke versi anime (wajib)"
+  }
+},
+        {
   "name": "AI Image 18+",
   "desc": "Menghasilkan gambar AI bergaya realistis. eror reques doank didalam web... tapi silahkan salin endepoint nya dan jalankan manual",
   "path": "/ai/aireal-img?prompt=",
