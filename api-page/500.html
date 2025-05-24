@@ -1,39 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>404</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <title>404</title>
-        <style>
-            * {
-                color: #333;
-            }
-            body, html {
-                height: 100%;
-                overflow: hidden;
-                margin: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: white;
-            }
-            .bg-divider {
-                background-color: #333;
-            }
-            .w-divider {
-                width: 1px;
-            }
-        </style>
-    </head>
-    <body class="font-sans antialiased">
-        <div class="flex flex-col items-center justify-center h-screen text-white">
-            <div class="flex h-5 items-center space-x-4">
-                <h1 class="text-4xl font-bold" style="color: #333">500</h1>
-                <div class="shrink-0 bg-divider border-none h-full w-divider" role="separator"></div>
-                <h2 style="color: #333">There Is Something Wrong-!!</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - Fukushima UI Update Server</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glow {
+            text-shadow: 0 0 10px rgba(66, 153, 225, 0.8);
+        }
+        .progress-bar {
+            height: 4px;
+            background-color: #2d3748;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #4299e1;
+            animation: progress-animation 2s infinite linear;
+        }
+        @keyframes progress-animation {
+            0% { width: 0%; margin-left: 0%; margin-right: 100%; }
+            50% { width: 100%; margin-left: 0%; margin-right: 0%; }
+            100% { width: 0%; margin-left: 100%; margin-right: 0%; }
+        }
+        .blink {
+            animation: blink-animation 1.5s steps(2, start) infinite;
+        }
+        @keyframes blink-animation {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="max-w-2xl mx-auto p-8 text-center">
+        <div class="mb-8">
+            <h1 class="text-5xl font-bold mb-2 glow">FUKUSHIMA</h1>
+            <h2 class="text-2xl font-semibold text-blue-300">UI Update Server</h2>
+        </div>
+        
+        <div class="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-700 shadow-lg">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <h3 class="text-xl font-semibold">SYSTEM DIPERBAIKI HARAP SABAR.</h3>
+            </div>
+            
+            <div class="progress-bar mb-6 rounded">
+                <div class="progress rounded"></div>
+            </div>
+            
+            <p class="mb-4 text-gray-300">Web Ini Mungkin Update Sistem Atau Terjadi Perbaikan Harap Tunggu Hingga Webs Kembali Normal.</p>
+            <p class="text-sm text-gray-400">Sumber resmi <span id="countdown">Fukushima</span> UI</p>
+        </div>
+        
+        <div class="bg-gray-800 rounded-lg p-4 text-sm border border-gray-700">
+            <div class="flex justify-center space-x-8">
+                <div class="text-center">
+                    <p class="text-gray-400">STATUS</p>
+                    <p class="text-green-400 font-mono blink">Maintance</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400">LAST UPDATE</p>
+                    <p class="font-mono" id="last-update">--:--:--</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-400">VERSION</p>
+                    <p class="font-mono">v3.2.1</p>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <script>
+        // Update last update time
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', {hour12: false});
+            document.getElementById('last-update').textContent = timeString;
+        }
+        
+        // Countdown timer
+        function startCountdown() {
+            let minutes = 15;
+            const countdownElement = document.getElementById('countdown');
+            
+            const timer = setInterval(() => {
+                minutes--;
+                countdownElement.textContent = minutes;
+                
+                if (minutes <= 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = "soon";
+                }
+            }, 60000);
+        }
+        
+        // Initialize
+        updateTime();
+        setInterval(updateTime, 1000);
+        startCountdown();
+    </script>
+</body>
 </html>
